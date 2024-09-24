@@ -3,7 +3,11 @@ export function calculateTimeInterval (
     endDate: Date
 ): string {
 
-    const timeDifference = endDate.getTime() - startDate.getTime();
+    const timeDifference: number = endDate.getTime() - startDate.getTime();
+
+    if (timeDifference < 0) {
+        return "The even has passed";
+    }
 
     const seconds: number = Math.floor((timeDifference / 1000) % 60);
     const minutes: number = Math.floor((timeDifference / 60000) % 60);
@@ -26,7 +30,7 @@ function formatTimeInterval(days: number, hours: number, minutes: number, second
     if (minutes > 0 || timeComponents.length > 0) {
         timeComponents.push(`${String(minutes).padStart(2, ' ')} ${minutes === 1 ? 'minute' : 'minutes'}`);
     }
-    
+
     timeComponents.push(`${String(seconds).padStart(2, ' ')} ${seconds === 1 ? 'second' : 'seconds'}`);
 
     return timeComponents.join(' ');
