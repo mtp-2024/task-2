@@ -1,0 +1,10 @@
+const getTimeBetweenDates = require('./countdown');
+
+const now = new Date();
+const sessionEnd = new Date('December 20, 2023 23:59:59');
+const newYear = new Date('January 1, 2024 00:00:00');
+const graduationDefense = new Date('June 1, 2024 10:00:00');
+
+console.log(`До окончания сессии осталось: ${getTimeBetweenDates(now, sessionEnd)}`);
+console.log(`До Нового года осталось: ${getTimeBetweenDates(now, newYear)}`);
+console.log(`До защиты диплома осталось: ${getTimeBetweenDates(now, graduationDefense)}`);

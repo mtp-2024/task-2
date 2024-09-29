@@ -4,8 +4,8 @@
   "description": "A simple app to show the countdown to the new year",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node index.js"
+    "start": "node src/main.js",
+    "test": "node tests/index.js"
   },
   "author": "Kovalev Egor nicknamed Ancient Evil",
   "license": "ISC"
