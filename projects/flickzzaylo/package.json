@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node time.js",
-    "test": "node tests.js"
+    "start": "node main.js",
+    "test": "node tests/tests.js"
   },
   "author": "Zabrodin V.A.",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.21.0",
     "luxon": "^3.5.0"
   },
   "type": "module"
