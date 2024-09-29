@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "start": "node index.js"
+    "test": "node ./tests/test.js",
+    "start": "node ./src/main.js"
   },
   "author": "Vukov Y. A.",
   "license": "ISC",
